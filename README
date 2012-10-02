@@ -1,0 +1,89 @@
+NAME
+    Task::BeLike::SHARYANTO::Favorited - Install all SHARYANTO's favorite
+    modules
+
+VERSION
+    version 0.01
+
+DESCRIPTION
+    This task will install modules favorited by SHARYANTO on
+    <http://metacpan.org>.
+
+TASK CONTENTS
+  Included modules
+   Data::Rmap
+   HTML::Escape
+   App::PPI::Dumper
+   Scalar::Util::Numeric
+   perlsecret
+   App::cpanoutdated
+   cpan::listchanges
+   App::pmuninstall
+   App::perlbrew
+   Config::IniFiles
+   Regexp::Grammars
+   Plack
+   PSGI
+   Starman
+   Class::Inspector
+   Text::ASCIITable
+   Term::ANSIColor
+   syntax
+   File::Flock
+   Module::Path
+   Module::List
+   Sort::Versions
+   Digest::MD5
+   Dist::Zilla
+   Test::Exception
+   Test::Simple
+   REST::Google
+   CHI
+   Tie::Cache
+   WWW::Mechanize
+   String::ShellQuote
+   Proc::PID::File
+   Path::Class
+   Mouse
+   Moose
+   Mojolicious
+   YAML::LibYAML
+   YAML::Syck
+   YAML
+   List::MoreUtils
+   JSON
+   LWP
+   File::Which
+   File::HomeDir
+   DBD::SQLite
+   DBI
+   autodie
+   DateTime
+   DateTime::BusinessHours
+   Moo
+   Data::Clone
+   UUID::Random
+   Capture::Tiny
+   File::LibMagic
+   Devel::Platform::Info
+   File::Slurp
+   File::chdir
+   App::cpanminus
+   Data::Printer
+   Carp::Always::Color
+   Carp::Always
+   Taint::Util
+   App::perlfind
+   PerlX::Maybe
+   Data::DPath
+   Log::Any
+   Marpa
+AUTHOR
+    SHARYANTO <SHARYANTO@cpan.org>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2012 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+

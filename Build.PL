@@ -1,0 +1,100 @@
+
+use strict;
+use warnings;
+
+use Module::Build 0.3601;
+
+
+my %module_build_args = (
+  "build_requires" => {
+    "Module::Build" => "0.3601"
+  },
+  "configure_requires" => {
+    "Module::Build" => "0.3601"
+  },
+  "dist_abstract" => "Install all SHARYANTO's favorite modules",
+  "dist_author" => [
+    "SHARYANTO <SHARYANTO\@cpan.org>"
+  ],
+  "dist_name" => "Task-BeLike-SHARYANTO-Favorited",
+  "dist_version" => "0.01",
+  "license" => "perl",
+  "module_name" => "Task::BeLike::SHARYANTO::Favorited",
+  "recommends" => {},
+  "recursive_test_files" => 1,
+  "requires" => {
+    "App::PPI::Dumper" => 0,
+    "App::cpanminus" => 0,
+    "App::cpanoutdated" => 0,
+    "App::perlbrew" => 0,
+    "App::perlfind" => 0,
+    "App::pmuninstall" => 0,
+    "CHI" => 0,
+    "Capture::Tiny" => 0,
+    "Carp::Always" => 0,
+    "Carp::Always::Color" => 0,
+    "Class::Inspector" => 0,
+    "Config::IniFiles" => 0,
+    "DBD::SQLite" => 0,
+    "DBI" => 0,
+    "Data::Clone" => 0,
+    "Data::DPath" => 0,
+    "Data::Printer" => 0,
+    "Data::Rmap" => 0,
+    "DateTime" => 0,
+    "DateTime::BusinessHours" => 0,
+    "Devel::Platform::Info" => 0,
+    "Digest::MD5" => 0,
+    "Dist::Zilla" => 0,
+    "File::Flock" => 0,
+    "File::HomeDir" => 0,
+    "File::LibMagic" => 0,
+    "File::Slurp" => 0,
+    "File::Which" => 0,
+    "File::chdir" => 0,
+    "HTML::Escape" => 0,
+    "JSON" => 0,
+    "LWP" => 0,
+    "List::MoreUtils" => 0,
+    "Log::Any" => 0,
+    "Marpa" => 0,
+    "Module::List" => 0,
+    "Module::Path" => 0,
+    "Mojolicious" => 0,
+    "Moo" => 0,
+    "Moose" => 0,
+    "Mouse" => 0,
+    "PSGI" => 0,
+    "Path::Class" => 0,
+    "PerlX::Maybe" => 0,
+    "Plack" => 0,
+    "Proc::PID::File" => 0,
+    "REST::Google" => 0,
+    "Regexp::Grammars" => 0,
+    "Scalar::Util::Numeric" => 0,
+    "Sort::Versions" => 0,
+    "Starman" => 0,
+    "String::ShellQuote" => 0,
+    "Taint::Util" => 0,
+    "Term::ANSIColor" => 0,
+    "Test::Exception" => 0,
+    "Test::Simple" => 0,
+    "Text::ASCIITable" => 0,
+    "Tie::Cache" => 0,
+    "UUID::Random" => 0,
+    "WWW::Mechanize" => 0,
+    "YAML" => 0,
+    "YAML::LibYAML" => 0,
+    "YAML::Syck" => 0,
+    "autodie" => 0,
+    "cpan::listchanges" => 0,
+    "perlsecret" => 0,
+    "syntax" => 0
+  },
+  "script_files" => []
+);
+
+
+my $build = Module::Build->new(%module_build_args);
+
+$build->create_build_script;
