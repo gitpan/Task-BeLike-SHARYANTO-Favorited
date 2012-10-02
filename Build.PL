@@ -17,13 +17,14 @@ my %module_build_args = (
     "SHARYANTO <SHARYANTO\@cpan.org>"
   ],
   "dist_name" => "Task-BeLike-SHARYANTO-Favorited",
-  "dist_version" => "0.01",
+  "dist_version" => "0.02",
   "license" => "perl",
   "module_name" => "Task::BeLike::SHARYANTO::Favorited",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
     "App::PPI::Dumper" => 0,
+    "App::cpanlistchanges" => 0,
     "App::cpanminus" => 0,
     "App::cpanoutdated" => 0,
     "App::perlbrew" => 0,
@@ -57,7 +58,6 @@ my %module_build_args = (
     "LWP" => 0,
     "List::MoreUtils" => 0,
     "Log::Any" => 0,
-    "Marpa" => 0,
     "Module::List" => 0,
     "Module::Path" => 0,
     "Mojolicious" => 0,
@@ -87,7 +87,6 @@ my %module_build_args = (
     "YAML::LibYAML" => 0,
     "YAML::Syck" => 0,
     "autodie" => 0,
-    "cpan::listchanges" => 0,
     "perlsecret" => 0,
     "syntax" => 0
   },

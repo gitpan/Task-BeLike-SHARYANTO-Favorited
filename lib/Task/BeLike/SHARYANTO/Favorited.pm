@@ -1,6 +1,6 @@
 package Task::BeLike::SHARYANTO::Favorited;
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 1;
 # ABSTRACT: Install all SHARYANTO's favorite modules
@@ -15,7 +15,7 @@ Task::BeLike::SHARYANTO::Favorited - Install all SHARYANTO's favorite modules
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 DESCRIPTION
 
@@ -37,7 +37,7 @@ This task will install modules favorited by SHARYANTO on L<http://metacpan.org>.
 
 =head3 L<App::cpanoutdated>
 
-=head3 L<cpan::listchanges>
+=head3 L<App::cpanlistchanges>
 
 =head3 L<App::pmuninstall>
 
@@ -156,8 +156,6 @@ This task will install modules favorited by SHARYANTO on L<http://metacpan.org>.
 =head3 L<Data::DPath>
 
 =head3 L<Log::Any>
-
-=head3 L<Marpa>
 
 =head1 AUTHOR
 

@@ -3,7 +3,7 @@ NAME
     modules
 
 VERSION
-    version 0.01
+    version 0.02
 
 DESCRIPTION
     This task will install modules favorited by SHARYANTO on
@@ -17,7 +17,7 @@ TASK CONTENTS
    Scalar::Util::Numeric
    perlsecret
    App::cpanoutdated
-   cpan::listchanges
+   App::cpanlistchanges
    App::pmuninstall
    App::perlbrew
    Config::IniFiles
@@ -77,7 +77,6 @@ TASK CONTENTS
    PerlX::Maybe
    Data::DPath
    Log::Any
-   Marpa
 AUTHOR
     SHARYANTO <SHARYANTO@cpan.org>
 

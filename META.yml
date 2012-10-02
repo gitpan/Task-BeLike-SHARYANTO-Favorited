@@ -15,6 +15,7 @@ meta-spec:
 name: Task-BeLike-SHARYANTO-Favorited
 requires:
   App::PPI::Dumper: 0
+  App::cpanlistchanges: 0
   App::cpanminus: 0
   App::cpanoutdated: 0
   App::perlbrew: 0
@@ -48,7 +49,6 @@ requires:
   LWP: 0
   List::MoreUtils: 0
   Log::Any: 0
-  Marpa: 0
   Module::List: 0
   Module::Path: 0
   Mojolicious: 0
@@ -78,9 +78,8 @@ requires:
   YAML::LibYAML: 0
   YAML::Syck: 0
   autodie: 0
-  cpan::listchanges: 0
   perlsecret: 0
   syntax: 0
 resources:
   homepage: http://metacpan.org/release/Task-BeLike-SHARYANTO-Favorited
-version: 0.01
+version: 0.02
