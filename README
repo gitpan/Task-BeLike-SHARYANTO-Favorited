@@ -3,7 +3,7 @@ NAME
     modules
 
 VERSION
-    version 0.02
+    version 0.03
 
 DESCRIPTION
     This task will install modules favorited by SHARYANTO on
@@ -11,6 +11,12 @@ DESCRIPTION
 
 TASK CONTENTS
   Included modules
+   Dist::Zilla::Plugin::ShareDir::Tarball
+   File::ShareDir::Tarball
+   File::ShareDir
+   Test::Harness
+   Devel::NYTProf
+   Devel::SizeMe
    Data::Rmap
    HTML::Escape
    App::PPI::Dumper
