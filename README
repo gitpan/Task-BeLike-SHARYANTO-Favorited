@@ -3,7 +3,7 @@ NAME
     modules
 
 VERSION
-    version 0.03
+    version 0.04
 
 DESCRIPTION
     This task will install modules favorited by SHARYANTO on
@@ -11,6 +11,67 @@ DESCRIPTION
 
 TASK CONTENTS
   Included modules
+   returning
+   Data::Structure::Util
+   Data::Dumper::GUI
+   Scope::Upper
+   Filesys::Notify::Simple
+   experimental
+   MIME::Lite::HTML
+   Signal::Mask
+   Log::Any::Adapter
+   Convert::Color
+   Alt
+   UNIVERSAL::new
+   Tie::Simple
+   DateTime::Format::Mail
+   HTML::FromANSI
+   App::sourcepan
+   Routes::Tiny
+   Module::Version
+   Text::Fuzzy
+   Term::ANSIScreen
+   Text::CharWidth
+   Pod::Text::Ansi
+   App::httpstatus
+   Authen::Passphrase
+   Dir::Purge
+   DBIx::DataModel
+   Sys::Detect::Virtualization
+   Xen::API
+   Hash::Case
+   Taint::Runtime
+   IPC::Run3
+   IPC::Run
+   Test::Pretty
+   File::Flock::Tiny
+   App::PipeFilter
+   Time::Duration
+   Class::XSAccessor
+   Expect
+   Perl::Tidy
+   Devel::TraceINC
+   App::Nopaste
+   Lingua::IT::Numbers
+   Tie::IxHash
+   Lingua::EN::Numbers
+   Lingua::ZH::Numbers
+   Promises
+   Term::ExtendedColor
+   forkprove
+   SemVer
+   Perl::Version
+   Lingua::FR::Numbers
+   String::Escape
+   CPAN::Mini
+   Farabi
+   File::Rsync::Mirror::Recent
+   JSON::XS
+   Pinto
+   Role::Tiny
+   App::PAUSE::cleanup
+   WWW::PAUSE::CleanUpHomeDir
+   LWP::Protocol::Net::Curl
    Dist::Zilla::Plugin::ShareDir::Tarball
    File::ShareDir::Tarball
    File::ShareDir
@@ -87,7 +148,7 @@ AUTHOR
     SHARYANTO <SHARYANTO@cpan.org>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2012 by Steven Haryanto.
+    This software is copyright (c) 2013 by Steven Haryanto.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

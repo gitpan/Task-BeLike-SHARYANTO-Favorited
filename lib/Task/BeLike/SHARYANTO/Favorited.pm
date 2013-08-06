@@ -1,12 +1,12 @@
 package Task::BeLike::SHARYANTO::Favorited;
 
-our $VERSION = '0.03'; # VERSION
+our $VERSION = '0.04'; # VERSION
 
 1;
 # ABSTRACT: Install all SHARYANTO's favorite modules
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -15,7 +15,7 @@ Task::BeLike::SHARYANTO::Favorited - Install all SHARYANTO's favorite modules
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 DESCRIPTION
 
@@ -24,6 +24,128 @@ This task will install modules favorited by SHARYANTO on L<http://metacpan.org>.
 =head1 TASK CONTENTS
 
 =head2 Included modules
+
+=head3 L<returning>
+
+=head3 L<Data::Structure::Util>
+
+=head3 L<Data::Dumper::GUI>
+
+=head3 L<Scope::Upper>
+
+=head3 L<Filesys::Notify::Simple>
+
+=head3 L<experimental>
+
+=head3 L<MIME::Lite::HTML>
+
+=head3 L<Signal::Mask>
+
+=head3 L<Log::Any::Adapter>
+
+=head3 L<Convert::Color>
+
+=head3 L<Alt>
+
+=head3 L<UNIVERSAL::new>
+
+=head3 L<Tie::Simple>
+
+=head3 L<DateTime::Format::Mail>
+
+=head3 L<HTML::FromANSI>
+
+=head3 L<App::sourcepan>
+
+=head3 L<Routes::Tiny>
+
+=head3 L<Module::Version>
+
+=head3 L<Text::Fuzzy>
+
+=head3 L<Term::ANSIScreen>
+
+=head3 L<Text::CharWidth>
+
+=head3 L<Pod::Text::Ansi>
+
+=head3 L<App::httpstatus>
+
+=head3 L<Authen::Passphrase>
+
+=head3 L<Dir::Purge>
+
+=head3 L<DBIx::DataModel>
+
+=head3 L<Sys::Detect::Virtualization>
+
+=head3 L<Xen::API>
+
+=head3 L<Hash::Case>
+
+=head3 L<Taint::Runtime>
+
+=head3 L<IPC::Run3>
+
+=head3 L<IPC::Run>
+
+=head3 L<Test::Pretty>
+
+=head3 L<File::Flock::Tiny>
+
+=head3 L<App::PipeFilter>
+
+=head3 L<Time::Duration>
+
+=head3 L<Class::XSAccessor>
+
+=head3 L<Expect>
+
+=head3 L<Perl::Tidy>
+
+=head3 L<Devel::TraceINC>
+
+=head3 L<App::Nopaste>
+
+=head3 L<Lingua::IT::Numbers>
+
+=head3 L<Tie::IxHash>
+
+=head3 L<Lingua::EN::Numbers>
+
+=head3 L<Lingua::ZH::Numbers>
+
+=head3 L<Promises>
+
+=head3 L<Term::ExtendedColor>
+
+=head3 L<forkprove>
+
+=head3 L<SemVer>
+
+=head3 L<Perl::Version>
+
+=head3 L<Lingua::FR::Numbers>
+
+=head3 L<String::Escape>
+
+=head3 L<CPAN::Mini>
+
+=head3 L<Farabi>
+
+=head3 L<File::Rsync::Mirror::Recent>
+
+=head3 L<JSON::XS>
+
+=head3 L<Pinto>
+
+=head3 L<Role::Tiny>
+
+=head3 L<App::PAUSE::cleanup>
+
+=head3 L<WWW::PAUSE::CleanUpHomeDir>
+
+=head3 L<LWP::Protocol::Net::Curl>
 
 =head3 L<Dist::Zilla::Plugin::ShareDir::Tarball>
 
@@ -175,10 +297,9 @@ SHARYANTO <SHARYANTO@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Steven Haryanto.
+This software is copyright (c) 2013 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
