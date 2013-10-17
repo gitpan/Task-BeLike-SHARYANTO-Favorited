@@ -1,6 +1,6 @@
 package Task::BeLike::SHARYANTO::Favorited;
 
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 1;
 # ABSTRACT: Install all SHARYANTO's favorite modules
@@ -15,7 +15,7 @@ Task::BeLike::SHARYANTO::Favorited - Install all SHARYANTO's favorite modules
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 DESCRIPTION
 
@@ -24,6 +24,32 @@ This task will install modules favorited by SHARYANTO on L<http://metacpan.org>.
 =head1 TASK CONTENTS
 
 =head2 Included modules
+
+=head3 L<Python::Decorator>
+
+=head3 L<Sereal>
+
+=head3 L<Sereal::Encoder>
+
+=head3 L<Sereal::Decoder>
+
+=head3 L<Devel::ptkdb>
+
+=head3 L<Devel::hdb>
+
+=head3 L<Text::Markdown::Hoedown>
+
+=head3 L<Test::Tester>
+
+=head3 L<App::cpackage>
+
+=head3 L<Unicode::LineBreak>
+
+=head3 L<App::Uni>
+
+=head3 L<Term::Shell>
+
+=head3 L<Devel::TraceUse>
 
 =head3 L<returning>
 
@@ -64,8 +90,6 @@ This task will install modules favorited by SHARYANTO on L<http://metacpan.org>.
 =head3 L<Text::Fuzzy>
 
 =head3 L<Term::ANSIScreen>
-
-=head3 L<Text::CharWidth>
 
 =head3 L<Pod::Text::Ansi>
 

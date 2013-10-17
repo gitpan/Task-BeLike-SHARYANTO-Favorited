@@ -3,7 +3,7 @@ NAME
     modules
 
 VERSION
-    version 0.04
+    version 0.05
 
 DESCRIPTION
     This task will install modules favorited by SHARYANTO on
@@ -11,6 +11,19 @@ DESCRIPTION
 
 TASK CONTENTS
   Included modules
+   Python::Decorator
+   Sereal
+   Sereal::Encoder
+   Sereal::Decoder
+   Devel::ptkdb
+   Devel::hdb
+   Text::Markdown::Hoedown
+   Test::Tester
+   App::cpackage
+   Unicode::LineBreak
+   App::Uni
+   Term::Shell
+   Devel::TraceUse
    returning
    Data::Structure::Util
    Data::Dumper::GUI
@@ -31,7 +44,6 @@ TASK CONTENTS
    Module::Version
    Text::Fuzzy
    Term::ANSIScreen
-   Text::CharWidth
    Pod::Text::Ansi
    App::httpstatus
    Authen::Passphrase

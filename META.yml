@@ -3,12 +3,12 @@ abstract: "Install all SHARYANTO's favorite modules"
 author:
   - 'SHARYANTO <SHARYANTO@cpan.org>'
 build_requires:
-  Capture::Tiny: 0
-  Module::Build: 0.3601
-  Test::More: 0.88
-  blib: 0
+  File::Spec: 0
+  IO::Handle: 0
+  IPC::Open3: 0
+  Test::More: 0
 configure_requires:
-  Module::Build: 0.3601
+  ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 4.300035, CPAN::Meta::Converter version 2.132140'
 license: perl
@@ -22,6 +22,8 @@ requires:
   App::PAUSE::cleanup: 0
   App::PPI::Dumper: 0
   App::PipeFilter: 0
+  App::Uni: 0
+  App::cpackage: 0
   App::cpanlistchanges: 0
   App::cpanminus: 0
   App::cpanoutdated: 0
@@ -56,6 +58,9 @@ requires:
   Devel::Platform::Info: 0
   Devel::SizeMe: 0
   Devel::TraceINC: 0
+  Devel::TraceUse: 0
+  Devel::hdb: 0
+  Devel::ptkdb: 0
   Digest::MD5: 0
   Dir::Purge: 0
   Dist::Zilla: 0
@@ -107,6 +112,7 @@ requires:
   Pod::Text::Ansi: 0
   Proc::PID::File: 0
   Promises: 0
+  Python::Decorator: 0
   REST::Google: 0
   Regexp::Grammars: 0
   Role::Tiny: 0
@@ -114,6 +120,9 @@ requires:
   Scalar::Util::Numeric: 0
   Scope::Upper: 0
   SemVer: 0
+  Sereal: 0
+  Sereal::Decoder: 0
+  Sereal::Encoder: 0
   Signal::Mask: 0
   Sort::Versions: 0
   Starman: 0
@@ -125,19 +134,22 @@ requires:
   Term::ANSIColor: 0
   Term::ANSIScreen: 0
   Term::ExtendedColor: 0
+  Term::Shell: 0
   Test::Exception: 0
   Test::Harness: 0
   Test::Pretty: 0
   Test::Simple: 0
+  Test::Tester: 0
   Text::ASCIITable: 0
-  Text::CharWidth: 0
   Text::Fuzzy: 0
+  Text::Markdown::Hoedown: 0
   Tie::Cache: 0
   Tie::IxHash: 0
   Tie::Simple: 0
   Time::Duration: 0
   UNIVERSAL::new: 0
   UUID::Random: 0
+  Unicode::LineBreak: 0
   WWW::Mechanize: 0
   WWW::PAUSE::CleanUpHomeDir: 0
   Xen::API: 0
@@ -152,4 +164,4 @@ requires:
   syntax: 0
 resources:
   homepage: http://metacpan.org/release/Task-BeLike-SHARYANTO-Favorited
-version: 0.04
+version: 0.05

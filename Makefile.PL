@@ -2,32 +2,31 @@
 use strict;
 use warnings;
 
-use Module::Build 0.3601;
 
 
-my %module_build_args = (
-  "build_requires" => {
-    "Module::Build" => "0.3601"
+use ExtUtils::MakeMaker 6.30;
+
+
+
+my %WriteMakefileArgs = (
+  "ABSTRACT" => "Install all SHARYANTO's favorite modules",
+  "AUTHOR" => "SHARYANTO <SHARYANTO\@cpan.org>",
+  "BUILD_REQUIRES" => {},
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  "configure_requires" => {
-    "Module::Build" => "0.3601"
-  },
-  "dist_abstract" => "Install all SHARYANTO's favorite modules",
-  "dist_author" => [
-    "SHARYANTO <SHARYANTO\@cpan.org>"
-  ],
-  "dist_name" => "Task-BeLike-SHARYANTO-Favorited",
-  "dist_version" => "0.04",
-  "license" => "perl",
-  "module_name" => "Task::BeLike::SHARYANTO::Favorited",
-  "recommends" => {},
-  "recursive_test_files" => 1,
-  "requires" => {
+  "DISTNAME" => "Task-BeLike-SHARYANTO-Favorited",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Task::BeLike::SHARYANTO::Favorited",
+  "PREREQ_PM" => {
     "Alt" => 0,
     "App::Nopaste" => 0,
     "App::PAUSE::cleanup" => 0,
     "App::PPI::Dumper" => 0,
     "App::PipeFilter" => 0,
+    "App::Uni" => 0,
+    "App::cpackage" => 0,
     "App::cpanlistchanges" => 0,
     "App::cpanminus" => 0,
     "App::cpanoutdated" => 0,
@@ -62,6 +61,9 @@ my %module_build_args = (
     "Devel::Platform::Info" => 0,
     "Devel::SizeMe" => 0,
     "Devel::TraceINC" => 0,
+    "Devel::TraceUse" => 0,
+    "Devel::hdb" => 0,
+    "Devel::ptkdb" => 0,
     "Digest::MD5" => 0,
     "Dir::Purge" => 0,
     "Dist::Zilla" => 0,
@@ -113,6 +115,7 @@ my %module_build_args = (
     "Pod::Text::Ansi" => 0,
     "Proc::PID::File" => 0,
     "Promises" => 0,
+    "Python::Decorator" => 0,
     "REST::Google" => 0,
     "Regexp::Grammars" => 0,
     "Role::Tiny" => 0,
@@ -120,6 +123,9 @@ my %module_build_args = (
     "Scalar::Util::Numeric" => 0,
     "Scope::Upper" => 0,
     "SemVer" => 0,
+    "Sereal" => 0,
+    "Sereal::Decoder" => 0,
+    "Sereal::Encoder" => 0,
     "Signal::Mask" => 0,
     "Sort::Versions" => 0,
     "Starman" => 0,
@@ -131,19 +137,22 @@ my %module_build_args = (
     "Term::ANSIColor" => 0,
     "Term::ANSIScreen" => 0,
     "Term::ExtendedColor" => 0,
+    "Term::Shell" => 0,
     "Test::Exception" => 0,
     "Test::Harness" => 0,
     "Test::Pretty" => 0,
     "Test::Simple" => 0,
+    "Test::Tester" => 0,
     "Text::ASCIITable" => 0,
-    "Text::CharWidth" => 0,
     "Text::Fuzzy" => 0,
+    "Text::Markdown::Hoedown" => 0,
     "Tie::Cache" => 0,
     "Tie::IxHash" => 0,
     "Tie::Simple" => 0,
     "Time::Duration" => 0,
     "UNIVERSAL::new" => 0,
     "UUID::Random" => 0,
+    "Unicode::LineBreak" => 0,
     "WWW::Mechanize" => 0,
     "WWW::PAUSE::CleanUpHomeDir" => 0,
     "Xen::API" => 0,
@@ -157,18 +166,22 @@ my %module_build_args = (
     "returning" => 0,
     "syntax" => 0
   },
-  "script_files" => [],
-  "test_requires" => {
-    "Capture::Tiny" => 0,
-    "Test::More" => "0.88",
-    "blib" => 0
+  "TEST_REQUIRES" => {
+    "File::Spec" => 0,
+    "IO::Handle" => 0,
+    "IPC::Open3" => 0,
+    "Test::More" => 0
+  },
+  "VERSION" => "0.05",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
 
-unless ( eval { Module::Build->VERSION(0.4004) } ) {
-  my $tr = delete $module_build_args{test_requires};
-  my $br = $module_build_args{build_requires};
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.63_03) } ) {
+  my $tr = delete $WriteMakefileArgs{TEST_REQUIRES};
+  my $br = $WriteMakefileArgs{BUILD_REQUIRES};
   for my $mod ( keys %$tr ) {
     if ( exists $br->{$mod} ) {
       $br->{$mod} = $tr->{$mod} if $tr->{$mod} > $br->{$mod};
@@ -179,6 +192,23 @@ unless ( eval { Module::Build->VERSION(0.4004) } ) {
   }
 }
 
-my $build = Module::Build->new(%module_build_args);
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
+  my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};
+  my $pp = $WriteMakefileArgs{PREREQ_PM};
+  for my $mod ( keys %$br ) {
+    if ( exists $pp->{$mod} ) {
+      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod};
+    }
+    else {
+      $pp->{$mod} = $br->{$mod};
+    }
+  }
+}
 
-$build->create_build_script;
+delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
+  unless eval { ExtUtils::MakeMaker->VERSION(6.52) };
+
+WriteMakefile(%WriteMakefileArgs);
+
+
+
